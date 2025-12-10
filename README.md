@@ -1,4 +1,3 @@
-This is my portfolio website created with Next.js, TS, TailwindCSS, ESLint & App Router. [Next.js](https://nextjs.org), bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### This is my portfolio website created with Next.js (v16), TS, TailwindCSS, ESLint & App Router.
 
-## How to open it?
-Just visit this link: ...
+### How to visit it? Just [click](http://jakub-jurkian-portfolio.vercel.app/) here
