@@ -1,1 +1,79 @@
 @import "tailwindcss";
+
+:root {
+  --font-sans: "Inter", sans-serif;
+  --bg-main: #1a1a1a;
+  --bg-card: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --accent: #fcd34d;
+  --border: #333333;
+}
+
+@theme {
+  --color-card: var(--bg-card);
+  --color-border-color: var(--border);
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.bento-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  min-height: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.25rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.2s;
+}
+
+.bento-box:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.bento-box .icon {
+  font-size: 1.75rem;
+  color: var(--text-secondary);
+}
+
+.bento-box .icon svg {
+  width: 32px;
+  height: 32px;
+  /* 2. Magia koloru */
+  fill: currentColor;
+  transition: all 0.2s ease;
+}
+
+.bento-box:hover .icon svg {
+  transform: scale(1.1);
+}
+
+.bento-box h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  flex-grow: 1;
+}
+
+.arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
