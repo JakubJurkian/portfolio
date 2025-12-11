@@ -12,6 +12,7 @@
 
 @theme {
   --color-card: var(--bg-card);
+  --color-border-color: var(--border);
 }
 
 body {
