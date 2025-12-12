@@ -1,5 +1,6 @@
 import Image from "next/image";
 import avatarImg from "./_assets/avatar.webp";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -17,7 +18,6 @@ export default function Home() {
             <span className="inline-block animate-pulse mr-1">👋</span> Open to work
           </div>
         </div>
-
         <div>
           <h1 className="text-[clamp(2.5rem,5vw+1rem,4rem)] md:text-[2rem] xl:text-[3rem] leading-[1.1] mb-3 font-bold tracking-[-0.02em]">
             I&apos;m Jakub Jurkian
@@ -44,7 +44,7 @@ export default function Home() {
 
       <nav className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 md:self-center">
         
-        <a href="projects.html" className="group bento-card">
+        <Link href="/projects" className="group bento-card">
           <span className="icon-wrapper">
             <svg viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
               <path d="m494.165 640.333-278.4 890.774 101.867 31.786L572.459 747h1211.306l-183.36 917.12c-5.013 24.853-26.986 42.88-52.266 42.88H159.979c-29.334 0-53.334-23.893-53.334-53.333v-1440h454.507L732.779 427h760.533v106.667h106.667V320.333H783.872L612.139 107H-.021v1546.667c0 88.213 71.786 160 160 160h1388.16c75.946 0 141.973-54.08 156.906-128.64l208.96-1044.694H494.165Z" fillRule="evenodd" />
@@ -52,9 +52,9 @@ export default function Home() {
           </span>
           <h3 className="bento-title">My Projects</h3>
           <span className="bento-arrow">→</span>
-        </a>
+        </Link>
 
-        <a href="about.html" className="group bento-card">
+        <Link href="/about-me" className="group bento-card">
           <span className="icon-wrapper">
             <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
               <path d="M26,52A26,26,0,0,1,22.88.19,25.78,25.78,0,0,1,34.73,1.5a2,2,0,1,1-1.35,3.77,22,22,0,0,0-21,38,22,22,0,0,0,35.41-20,2,2,0,1,1,4-.48A26,26,0,0,1,26,52Z" />
@@ -64,7 +64,7 @@ export default function Home() {
           </span>
           <h3 className="bento-title">About Me</h3>
           <span className="bento-arrow">→</span>
-        </a>
+        </Link>
 
         <a href="https://github.com/JakubJurkian" target="_blank" className="group bento-card">
           <span className="icon-wrapper">
