@@ -1,5 +1,35 @@
 import Link from "next/link";
 
+// 1. Define the content for the timeline section
+const timelineEvents = [
+  {
+    year: "2025 - Present",
+    title: "Contributor, University Programming Club (WIP)",
+    description:
+      "Technical contributor to the 'Work In Progress' club. Collaborating in an Agile environment to build a web application, participating in code reviews, and exchanging knowledge with peers.",
+    tags: ["Team Collaboration", "Git Workflow", "Code Review"],
+  },
+  {
+    year: "2024 - Present",
+    title: "B.Sc. Computer Science - University of Gdańsk",
+    description:
+      "Specializing in Fullstack Industrial Development. Building modern web systems using React, Next.js, and Node.js, backed by robust Java Spring and SQL architectures. Mastering the complete pipeline from database design to containerized deployment.",
+    tags: ["Fullstack development", "Databases & SQL", "Industrial DevOps"],
+  },
+  {
+    year: "2019 - 2023",
+    title: "IT Technician Diploma: Software Dev & Systems Administration",
+    description:
+      "Completed a comprehensive dual-specialization program. Infrastructure: Mastered system administration, hardware diagnostics, and Linux/Windows environments. Development: Built web applications using JavaScript, PHP, and Python, backed by relational SQL database design and network management.",
+    tags: [
+      "Full-Stack Fundamentals",
+      "Linux/Windows Admin",
+      "Hardware/OS",
+      "SQL Databases",
+    ],
+  },
+];
+
 export default function AboutMe() {
   return (
     <div className="min-h-screen w-full flex flex-col items-center">
@@ -19,7 +49,49 @@ export default function AboutMe() {
       <main className="w-full max-w-[1200px] px-6 md:px-12 pb-20 grid grid-cols-1 lg:grid-cols-3 gap-10">
         <section className="lg:col-span-2 space-y-10">
           <article className="bg-card border border-border-color rounded-2xl p-8 md:p-10">
-            
+            <h2 className="text-3xl font-bold mb-4 text-(--text-primary)">
+              Logic, Structure, Design.
+            </h2>
+            <p className="text-lg text-(--text-secondary) leading-relaxed">
+              I am a passionate Full-Stack Web Developer{" "}
+              <span className="font-semibold text-(--text-primary)">
+                programming since 2021
+              </span>
+              , dedicated to building clean, scalable, and maintainable
+              applications. I combine a strong engineering background with
+              hands-on expertise in crafting high-performance{" "}
+              <span className="font-semibold text-(--text-primary)">
+                user interfaces
+              </span>{" "}
+              and architecting robust{" "}
+              <span className="font-semibold text-(--text-primary)">
+                backends
+              </span>{" "}
+              and{" "}
+              <span className="font-semibold text-(--text-primary)">
+                serverless
+              </span>{" "}
+              solutions.
+            </p>
+
+            <p className="text-lg text-(--text-secondary) leading-relaxed mt-4">
+              My drive is to solve complex problems with elegant code,
+              prioritizing{" "}
+              <span className="font-semibold text-(--text-primary)">
+                developer experience
+              </span>{" "}
+              and{" "}
+              <span className="font-semibold text-(--text-primary)">
+                user-centric design
+              </span>
+              . Although early in my professional career, I treat every project
+              with{" "}
+              <span className="font-semibold text-(--text-primary)">
+                industrial rigor
+              </span>
+              —currently focusing on honing my skills in performance
+              optimization.
+            </p>
           </article>
 
           {/* KEY SKILLS / TECH STACK - USING CARD STYLING */}
@@ -28,7 +100,26 @@ export default function AboutMe() {
               Professional Toolkit
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-              
+              {[
+                "React.js",
+                "Next.js",
+                "TypeScript",
+                "ASP.NET Core",
+                "Node/Express.js",
+                "Tailwind CSS",
+                "MongoDB",
+                "Firebase",
+                "Git",
+              ].map((skill) => (
+                <div
+                  key={skill}
+                  className="bg-card border border-border-color rounded-xl p-4 text-center hover:border-accent transition-colors duration-200"
+                >
+                  <p className="font-medium text-base text-(--text-primary)">
+                    {skill}
+                  </p>
+                </div>
+              ))}
             </div>
           </article>
         </section>
@@ -39,7 +130,33 @@ export default function AboutMe() {
             My Journey
           </h3>
           <div className="relative border-l-2 border-border-color ml-4">
-            
+            {timelineEvents.map((event, index) => (
+              <div key={index} className="mb-8 pl-6 relative">
+                {/* Timeline Dot (Accent Color) */}
+                <div className="absolute w-4 h-4 rounded-full bg-accent -left-2 top-1.5 border-4 border-main"></div>
+
+                <h4 className="text-lg font-bold text-(--text-primary) mb-1">
+                  {event.title}
+                </h4>
+                <p className="text-sm text-(--text-secondary) mb-3">
+                  {event.year}
+                </p>
+                <p className="text-base text-(--text-secondary) leading-relaxed mb-3">
+                  {event.description}
+                </p>
+
+                <div className="flex flex-wrap gap-2">
+                  {event.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs font-medium px-3 py-1 rounded-full bg-[#2a2a2a] text-(--text-secondary) border border-[#333]"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
 
             {/* Final Timeline Event Placeholder */}
             <div className="mb-8 pl-6 relative">
