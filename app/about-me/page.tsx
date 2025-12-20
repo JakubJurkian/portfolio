@@ -105,7 +105,7 @@ export default function AboutMe() {
                 "Next.js",
                 "TypeScript",
                 "ASP.NET Core",
-                "Node/Express.js",
+                "Node / Express.js",
                 "Tailwind CSS",
                 "MongoDB",
                 "Firebase",
@@ -113,9 +113,9 @@ export default function AboutMe() {
               ].map((skill) => (
                 <div
                   key={skill}
-                  className="bg-card border border-border-color rounded-xl p-4 text-center hover:border-accent transition-colors duration-200"
+                  className="bg-card min-w-28 border border-border-color rounded-xl text-wrap p-4 text-center hover:border-accent transition-colors duration-200"
                 >
-                  <p className="font-medium text-base text-(--text-primary)">
+                  <p className="font-medium text-base text-(--text-primary) text-wrap">
                     {skill}
                   </p>
                 </div>
