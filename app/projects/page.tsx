@@ -2,8 +2,57 @@ import Image from "next/image";
 import Link from "next/link";
 import techBlogPrevImg from "../_assets/tech-blog-prev.webp";
 import nodewavePrevImg from "../_assets/nodewave-prev.webp";
+import velocityPrevImg from "../_assets/velocity-preview.webp";
+import smartHomePRevImg from "../_assets/smart-home-preview.webp";
 
 const projects = [
+  {
+    title: "Temporal Resource Allocation System (VeloCity)",
+    description:
+      "A professional Single Page Application (SPA) for premium e-bike fleet management. Key features include a custom temporal collision detection engine to prevent double-bookings, Role-Based Access Control (RBAC) for admins/clients, and a performance-optimized analytics dashboard using memoization and lazy loading. The system simulates a backend environment with asynchronous patterns and robust state management.",
+    stack: [
+      "React",
+      "TypeScript",
+      "Redux Toolkit",
+      "SCSS Modules",
+      "Framer Motion",
+      "Recharts",
+      "Vite",
+    ],
+    image: velocityPrevImg,
+    liveUrl: "https://temporal-resource-allocation-system.vercel.app",
+    repoUrl: "https://github.com/JakubJurkian/Velocity",
+  },
+  {
+    title: "Smart Home Simulator - Full-Stack IoT Management System",
+    description:
+      "A comprehensive smart home management platform featuring real-time device monitoring, MQTT integration, and TCP server communication. Includes user authentication, room/device CRUD operations, maintenance logging, and SignalR-based live updates. Built with ASP.NET Core backend, React TypeScript frontend, and Entity Framework Core with 90%+ test coverage.",
+    stack: [
+      "C#",
+      ".NET 10",
+      "React",
+      "TypeScript",
+      "Entity Framework Core",
+      "SignalR",
+      "MQTT",
+      "SQL Server",
+      "Tailwind CSS",
+      "xUnit",
+      "Docker",
+    ],
+    features: [
+      "Real-time device state updates via SignalR",
+      "MQTT protocol integration for IoT communication",
+      "TCP server for smart device simulation",
+      "Role-based user authentication & authorization",
+      "RESTful API with comprehensive integration tests",
+      "Responsive UI with device & room management",
+      "Maintenance log tracking system",
+    ],
+    image: smartHomePRevImg,
+    liveUrl: "https://github.com/JakubJurkian/smart-home-simulator-tests",
+    repoUrl: "https://github.com/JakubJurkian/smart-home-simulator-tests",
+  },
   {
     title: "Full-Stack Serverless Tech Blog",
     description:
@@ -28,22 +77,6 @@ const projects = [
     image: nodewavePrevImg, // Replace with your imported image
     liveUrl: "https://github.com/JakubJurkian/Nodewave", // Placeholder: Replace with the actual URL
     repoUrl: "nodewave.onrender.com", // Placeholder: Replace with the actual repository URL
-  },
-  {
-    title: "A frontend application - Temporal Resource Allocation System",
-    description: "...",
-    stack: ["React", "Redux", "Tailwind"],
-    image: nodewavePrevImg,
-    liveUrl: "#",
-    repoUrl: "#",
-  },
-  {
-    title: "Full-stack application Smart Home Simulator",
-    description: "...",
-    stack: ["C#", ".NET", "Blazor"],
-    image: nodewavePrevImg,
-    liveUrl: "#",
-    repoUrl: "#",
   },
 ];
 
@@ -73,7 +106,7 @@ export default function Projects() {
               className="group bg-card border border-border-color rounded-2xl overflow-hidden hover:border-accent transition-all duration-300 flex flex-col h-full"
             >
               {/* Image Section */}
-              <div className="relative w-full aspect-[16/9] overflow-hidden border-b border-border-color">
+              <div className="relative w-full aspect-video overflow-hidden border-b border-border-color">
                 <Image
                   src={project.image}
                   alt={project.title}
