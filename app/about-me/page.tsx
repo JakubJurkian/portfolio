@@ -53,44 +53,43 @@ export default function AboutMe() {
               Logic, Structure, Design.
             </h2>
             <p className="text-lg text-(--text-secondary) leading-relaxed">
-              I am a passionate Full-Stack Web Developer{" "}
+              I am an aspiring IT professional{" "}
               <span className="font-semibold text-(--text-primary)">
                 programming since 2021
               </span>
-              , dedicated to building clean, scalable, and maintainable
-              applications. I combine a strong engineering background with
-              hands-on expertise in crafting high-performance{" "}
+              , dedicated to delivering clean, reliable, and efficient technical
+              solutions. I combine a strong analytical background with hands-on
+              expertise in{" "}
               <span className="font-semibold text-(--text-primary)">
-                user interfaces
+                solving complex problems
               </span>{" "}
-              and architecting robust{" "}
+              and understanding how{" "}
               <span className="font-semibold text-(--text-primary)">
-                backends
+                software
               </span>{" "}
               and{" "}
               <span className="font-semibold text-(--text-primary)">
-                serverless
+                systems
               </span>{" "}
-              solutions.
+              work together.
             </p>
 
             <p className="text-lg text-(--text-secondary) leading-relaxed mt-4">
-              My drive is to solve complex problems with elegant code,
-              prioritizing{" "}
+              My drive is to approach challenges with precision, prioritizing{" "}
               <span className="font-semibold text-(--text-primary)">
-                developer experience
+                efficiency
               </span>{" "}
               and{" "}
               <span className="font-semibold text-(--text-primary)">
-                user-centric design
+                practical functionality
               </span>
-              . Although early in my professional career, I treat every project
+              . Although early in my professional career, I treat every task
               with{" "}
               <span className="font-semibold text-(--text-primary)">
                 industrial rigor
               </span>
-              —currently focusing on honing my skills in performance
-              optimization.
+              —currently looking for an opportunity to apply my technical
+              mindset in a dynamic environment.
             </p>
           </article>
 
