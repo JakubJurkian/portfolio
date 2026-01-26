@@ -33,8 +33,9 @@ export default function Home() {
           </p>
 
           <a
-            href="./jakub_jurkian_cv.pdf"
+            href="/jakub_jurkian_cv.pdf"
             className="block w-full md:w-auto md:inline-block text-center bg-accent text-main px-8 py-[0.9rem] md:px-10 md:py-4 rounded-lg font-semibold text-base md:text-[1.1rem] no-underline transition-all duration-200 hover:bg-[#fde047]"
+            target="_blank"
           >
             Download Resume
           </a>
