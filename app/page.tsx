@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="w-full grid grid-cols-1 gap-12 max-w-[410px] md:max-w-[1200px] md:grid-cols-2  md:items-center">
+    <div className="w-full grid grid-cols-1 gap-12 max-w-[410px] md:max-w-[1200px] md:grid-cols-2 md:items-center">
       <main className="text-center md:text-left md:pt-0">
-        <div className="flex items-center gap-4 mb-6">
+        <div className="flex items-center gap-4 mb-6 justify-center md:justify-start">
           <Image
             src={avatarImg}
             alt="Jakub Jurkian"
@@ -32,13 +32,24 @@ export default function Home() {
             kickstart my professional journey in tech.
           </p>
 
-          <a
-            href="/jakub_jurkian_cv.pdf"
-            className="block w-full md:w-auto md:inline-block text-center bg-accent text-main px-8 py-[0.9rem] md:px-10 md:py-4 rounded-lg font-semibold text-base md:text-[1.1rem] no-underline transition-all duration-200 hover:bg-[#fde047]"
-            target="_blank"
-          >
-            Download Resume
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+            <a
+              href="/jakub_jurkian_cv_eng.pdf"
+              target="_blank"
+              className="flex-1 md:flex-none justify-center items-center text-center bg-accent text-main px-8 py-3 rounded-lg font-semibold text-base transition-all duration-200 hover:bg-[#fde047] hover:-translate-y-1 shadow-sm"
+            >
+              Resume (EN)
+            </a>
+
+            <a
+              href="/jakub_jurkian_cv_pl.pdf"
+              target="_blank"
+              className="flex-1 md:flex-none justify-center items-center text-center border-2 border-border-color text-(--text-secondary) px-8 py-3 rounded-lg font-semibold text-base transition-all duration-200 hover:border-accent hover:text-accent hover:-translate-y-1"
+            >
+              CV (PL)
+            </a>
+          </div>
+          
         </div>
       </main>
 
