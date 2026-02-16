@@ -26,7 +26,7 @@ const projects = [
   {
     title: "Smart Home Simulator - Full-Stack IoT Management System",
     description:
-      "A comprehensive smart home management platform featuring real-time device monitoring, MQTT integration, and TCP server communication. Includes user authentication, room/device CRUD operations, maintenance logging, and SignalR-based live updates. Built with ASP.NET Core backend, React TypeScript frontend, and Entity Framework Core with 90%+ test coverage.",
+      "A comprehensive smart home management platform featuring real-time device monitoring, MQTT integration, and TCP server communication. Includes user authentication, dockerization, room/device CRUD operations, maintenance logging, and SignalR-based live updates. Built with ASP.NET Core backend, React TypeScript frontend, and Entity Framework Core with 80%+ test coverage.",
     stack: [
       "C#",
       ".NET 10",
@@ -40,18 +40,9 @@ const projects = [
       "xUnit",
       "Docker",
     ],
-    features: [
-      "Real-time device state updates via SignalR",
-      "MQTT protocol integration for IoT communication",
-      "TCP server for smart device simulation",
-      "Role-based user authentication & authorization",
-      "RESTful API with comprehensive integration tests",
-      "Responsive UI with device & room management",
-      "Maintenance log tracking system",
-    ],
     image: smartHomePRevImg,
-    liveUrl: "https://github.com/JakubJurkian/smart-home-simulator-tests",
-    repoUrl: "https://github.com/JakubJurkian/smart-home-simulator-tests",
+    liveUrl: "https://github.com/JakubJurkian/smart-home-simulator",
+    repoUrl: "https://github.com/JakubJurkian/smart-home-simulator",
   },
   {
     title: "Full-Stack Serverless Tech Blog",
