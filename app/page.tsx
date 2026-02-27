@@ -80,7 +80,7 @@ export default function Home() {
         </Link>
 
         <a
-          href="https://github.com/JakubJurkian"
+          href="https://github.com/jakub-jurkian"
           target="_blank"
           className="group bento-card"
         >
