@@ -7,9 +7,30 @@ import smartHomePRevImg from "../_assets/smart-home-preview.webp";
 
 const projects = [
   {
-    title: "Temporal Resource Allocation System (VeloCity)",
+    title: "Smart Home Simulator (IoT)",
     description:
-      "A professional Single Page Application (SPA) for premium e-bike fleet management. Key features include a custom temporal collision detection engine to prevent double-bookings, Role-Based Access Control (RBAC) for admins/clients, and a performance-optimized analytics dashboard using memoization and lazy loading. The system simulates a backend environment with asynchronous patterns and robust state management.",
+      "Designed an IoT architecture simulating devices via a TCP server and MQTT protocol, powered by a high-performance ASP.NET Core and Entity Framework backend. Deployed a serverless architecture in Microsoft Azure, hosting containers in Azure Container Apps, frontend in Static Web Apps, and data in Azure SQL Database. Achieved over 80% integration test coverage using xUnit, facilitating CI/CD stability.",
+    stack: [
+      "C#",
+      ".NET",
+      "Azure",
+      "Docker",
+      "React",
+      "TypeScript",
+      "Entity Framework Core",
+      "SignalR",
+      "MQTT",
+      "SQL Server",
+      "xUnit",
+    ],
+    image: smartHomePRevImg,
+    liveUrl: "https://lively-pebble-072971f10.6.azurestaticapps.net",
+    repoUrl: "https://github.com/JakubJurkian/smart-home-simulator",
+  },
+  {
+    title: "Temporal Resource Allocation (VeloCity)",
+    description:
+      "An SPA for e-bike fleet management featuring a custom temporal collision detection algorithm to prevent double-bookings. Designed a billing algorithm ensuring uniform pricing across all e-bikes, where total cost depends exclusively on the number of rental days. Optimized frontend performance with memoization and lazy loading to handle large datasets, with Role-Based Access Control (RBAC) for admins and clients.",
     stack: [
       "React",
       "TypeScript",
@@ -24,50 +45,37 @@ const projects = [
     repoUrl: "https://github.com/JakubJurkian/Velocity",
   },
   {
-    title: "Smart Home Simulator - Full-Stack IoT Management System",
+    title: "Social Network (Nodewave)",
     description:
-      "A comprehensive smart home management platform featuring real-time device monitoring, MQTT integration, and TCP server communication. Includes user authentication, dockerization, room/device CRUD operations, maintenance logging, and SignalR-based live updates. Built with ASP.NET Core backend, React TypeScript frontend, and Entity Framework Core with 80%+ test coverage.",
+      "Built a multi-layered security system: session authentication with bcrypt and connect-mongo, password reset via one-time tokens with TTL, and authorization middleware protecting all sensitive routes. Designed a MongoDB data schema enabling relationships between users, posts, and interactions, with atomic avatar updates propagated to all related documents. Implemented input validation at every layer (express-validator + MIME type validation in multer).",
     stack: [
-      "C#",
-      ".NET 10",
-      "React",
       "TypeScript",
-      "Entity Framework Core",
-      "SignalR",
-      "MQTT",
-      "SQL Server",
+      "Express.js",
+      "MongoDB",
+      "EJS",
+      "Node.js",
       "Tailwind CSS",
-      "xUnit",
-      "Docker",
     ],
-    image: smartHomePRevImg,
-    liveUrl: "https://github.com/JakubJurkian/smart-home-simulator",
-    repoUrl: "https://github.com/JakubJurkian/smart-home-simulator",
+    image: nodewavePrevImg,
+    liveUrl: "https://nodewave.onrender.com",
+    repoUrl: "https://github.com/JakubJurkian/Nodewave",
   },
   {
     title: "Full-Stack Serverless Tech Blog",
     description:
-      "A robust, full-stack blog platform leveraging a modern serverless architecture. Features include secure real-time user authentication and dynamic content management (CRUD) for blog posts via Firebase services. Built with a React/TypeScript frontend and managed state using Redux Toolkit for high maintainability.",
+      "A full-stack blog platform with a serverless architecture. Features secure user authentication via Auth0, dynamic content management (CRUD) for blog posts with a rich-text Quill editor, and HTML sanitization with DOMPurify. Built with a React/TypeScript frontend, Firebase backend services, and Redux Toolkit for state management.",
     stack: [
       "React",
       "Redux Toolkit",
       "TypeScript",
+      "Auth0",
+      "Firebase",
       "Tailwind CSS",
       "Vite",
-      "Firebase",
     ],
-    image: techBlogPrevImg, // Replace with your imported image
+    image: techBlogPrevImg,
     liveUrl: "https://technology-blog.web.app",
     repoUrl: "https://github.com/JakubJurkian/My-Tech-Blog",
-  },
-  {
-    title: "Full-Stack Social Network Platform (Nodewave)",
-    description:
-      "A monolithic full-stack social networking application focused on core features: user authentication (signup/login), text post creation, post viewing, and profile management (including avatar upload and password reset). The architecture uses Express for routing, MongoDB for data persistence, and EJS for server-side rendering.",
-    stack: ["Express.js", "MongoDB", "EJS", "Node.js", "Tailwind CSS"],
-    image: nodewavePrevImg, // Replace with your imported image
-    liveUrl: "https://github.com/JakubJurkian/Nodewave", // Placeholder: Replace with the actual URL
-    repoUrl: "nodewave.onrender.com", // Placeholder: Replace with the actual repository URL
   },
 ];
 

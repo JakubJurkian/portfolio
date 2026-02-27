@@ -13,8 +13,8 @@ const timelineEvents = [
     year: "2024 - Present",
     title: "B.Sc. Computer Science - University of Gdańsk",
     description:
-      "Specializing in Fullstack Industrial Development. Building modern web systems using React, Next.js, and Node.js, backed by robust Java Spring and SQL architectures. Mastering the complete pipeline from database design to containerized deployment.",
-    tags: ["Fullstack development", "Databases & SQL", "Industrial DevOps"],
+      "Specializing in Systems Programming (Golang) and Databases. Core coursework includes Algorithms & Data Structures, Operating Systems, Cloud Technologies, Computer Networks, and Automated Testing. Building fullstack systems with .NET/React and deploying containerized applications to Azure.",
+    tags: ["Systems Programming", "Databases & SQL", "Cloud & DevOps"],
   },
   {
     year: "2019 - 2023",
@@ -98,16 +98,19 @@ export default function AboutMe() {
             <h3 className="text-2xl font-bold mb-6 text-(--text-primary)">
               Professional Toolkit
             </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
               {[
-                "React.js",
-                "Next.js",
+                "C# / .NET",
                 "TypeScript",
-                "ASP.NET Core",
+                "React",
                 "Node / Express.js",
-                "Tailwind CSS",
+                "Go",
+                "Python",
+                "Docker",
+                "Microsoft Azure",
+                "SQL Server",
+                "PostgreSQL",
                 "MongoDB",
-                "Firebase",
                 "Git",
               ].map((skill) => (
                 <div

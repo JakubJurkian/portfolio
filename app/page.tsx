@@ -23,13 +23,14 @@ export default function Home() {
             I&apos;m Jakub Jurkian
           </h1>
           <h2 className="text-[1.125rem] md:text-[1.25rem] text-(--text-secondary) font-normal mb-8">
-            IT Student | Problem Solver | Tech Enthusiast
+            CS Student | Fullstack &amp; DevOps | .NET &amp; React
           </h2>
 
           <p className="text-(--text-secondary) text-base md:text-[1.125rem] leading-[1.6] md:leading-[1.7] max-w-full md:max-w-[480px] mb-10">
-            Building scalable Applications with clean architecture. Currently
-            studying IT at the University of Gdańsk. Looking for a role to
-            kickstart my professional journey in tech.
+            Focused on building fullstack applications and deploying them to
+            containerized cloud environments. Currently studying Computer
+            Science at the University of Gdańsk — seeking a Summer 2026
+            internship in Backend, DevOps, or Software Engineering.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
@@ -49,7 +50,6 @@ export default function Home() {
               CV (PL)
             </a>
           </div>
-          
         </div>
       </main>
 
