@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Jakub Jurkian | Web Developer",
+  title: "Jakub Jurkian | Software Engineer",
 };
 
 const inter = Inter({ subsets: ["latin"] });
